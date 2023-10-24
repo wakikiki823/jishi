@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>招新の表单</title>
+    <style> 
+        .let {
+           display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .box{
+            width:50vw;
+            height: 80vh;
+            border: 1px solid grey;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form {
+            overflow-y: scroll;
+        }
+        .fresh{
+            text-align: center;
+            border-color: transparent;
+        }
+        button{
+            position: fixed;
+            left: 700px;
+            bottom: 200px;
+        }
+        .max {
+            width: 600px;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+        textarea {
+            resize:none;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+        .input1{
+            margin: 16px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="let">
+      <div class="box">
+        <form  class="form">
+            <div class="fresh input1">招新の表单</div>
+            <div>姓名：</div>
+            <div class="input1"><input type="text" class="max"></div>
+            <div class="input1">爱好：
+            <input type="checkbox" name="aihao" value="睡觉" disabled>睡觉
+            <input type="checkbox" name="aihao" value="学前端">学前端
+            <input type="checkbox" name="aihao" value="吃吃吃">吃吃吃</div>
+            <div class="input1">性别：
+            <input type="radio" name="xingbie" value="男">男
+            <input type="radio" name="xingbie" value="女">女
+            <input type="radio" name="xingbie" value="武装直升机">武装直升机</div>
+            <div class="input1">评论</div>
+            <textarea rows="3" cols="20" name="text"></textarea><br>
+        </form>
+        <div><button>提交</button></div>
+      </div>
+    </div>
+</body>
+</html>

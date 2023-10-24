@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>木犀前端机试</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box{
+            text-align: center;
+            vertical-align: middle;
+        }
+        @keyframes move {
+            0%{
+                font: 100;
+                opacity: 0;
+            }
+            50%{
+                font: 100;
+                opacity:1;
+            }
+
+            100%{
+                font: 100;
+                opacity:1;
+            }
+        }
+        .yuan {
+           font-size: 50px;
+           opacity: 0;
+            animation: move 8s ease-in-out infinite;
+        }
+       @keyframes six {
+            0%{
+                font: 100;
+                opacity: 0;
+            }
+             100%{
+                font: 100;
+                opacity:1;
+            }
+        }
+       .shen {
+           font-size: 16px;
+           opacity: 0;
+            animation: six 8s ease-in-out  infinite;
+
+       }
+    </style>
+</head>
+<body>
+    <div class="box">
+      <div class="yuan">原神</div>
+      <div  class="shen">看完这段话后的苏芃酱甚是激动，立即打开了美团，启动原神！
+    话说最近饿了么是不是挺没料的，优惠越来越少，美团感觉福利多些</div>
+    </div>
+</body>
+</html>
