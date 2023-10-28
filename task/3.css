@@ -1,0 +1,44 @@
+#header {
+    background-color: grey ;
+    margin-bottom: 20px;
+}
+
+#content {
+    width: 40%;
+    height: 180px;
+    background-color: red;
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+    line-height: 60px;
+}
+
+#sidebar {
+    width: 20%;
+    height:100px;
+    background-color: pink;
+    display: inline-block;
+    float: left;
+    line-height: 100px;
+}
+
+#sidebar2 {
+    width: 40%;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+    float: left;
+    line-height:100px;
+}
+
+#footer {
+    background-color: yellow;
+    clear: both;
+}
+.yes {
+    font-size: 25px;
+}
+* {
+    margin:0;
+    padding:0;
+}
