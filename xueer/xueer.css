@@ -1,7 +1,8 @@
 #li1 {
   list-style: none;
   float: left;
-  margin-left: 40px;
+  margin-right: 25px;
+  margin-left: 0;
 }
 .nav {
   margin-left: 112px;
@@ -11,18 +12,20 @@
   align-items: center;
   flex-wrap: nowrap;
 }
-.kuang {
-  border: solid red 5px;
+#wu {
+  margin-left: 32px;
+}
+.input1 {
   width: 400px;
   height: 50px;
-  margin: 50px;
+  border: 5px solid red;
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
 }
-#img1 {
-  float: right;
-}
-button {
+#button2 {
   margin-left: 20px;
-  font-size: 35px;
+  font-size: 20px;
   background-color: #1dc091;
   border-color: transparent;
   color: white;
@@ -31,58 +34,80 @@ button {
 }
 .bgc {
   position: relative;
+  margin-top: 150px;
 }
 .dian {
   position: absolute;
   bottom: 5px;
   right: 0px;
 }
+.new {
+  display: flex;
+  justify-content: space-around;
+}
 .gong,
 .tong,
 .su,
 .zhuan {
   text-align: center;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: solid #1dc091;
   color: #1dc091;
   border-radius: 50%;
   font-size: 50px;
-  line-height: 200px;
-}
-.ul1 {
-  border-left: solid rgb(191, 190, 190) 2px;
-}
-#gong,
-#tong,
-#su,
-#zhuan {
-  margin-top: 10px;
+  line-height: 150px;
   display: inline-block;
+  margin-top: 20px;
+}
+.gong:hover {
+  background-color: #1dc091;
+}
+.tong:hover {
+  background-color: #1dc091;
+}
+.su:hover {
+  background-color: #1dc091;
+}
+.zhuan:hover {
+  background-color: #1dc091;
 }
 #box {
   display: flex;
   justify-content: space-around;
 }
+.hei {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.ho {
+  list-style: none;
+  font-size: 12px;
+}
+
 .jia {
   margin: 0;
   padding: 0;
-  text-align: center;
   width: 50px;
   height: 50px;
-  border: solid #1dc091;
+  border: 2px solid #1dc091;
   border-radius: 50%;
   color: #1dc091;
-  line-height: 50px;
-  font-weight: lighter;
-  font-size: 50px;
+  line-height: 42px;
+  font-size: 75px;
+  font-weight: 100;
 }
 #jia {
   display: flex;
   justify-content: space-around;
 }
 .div1 {
-  margin-bottom: 10px;
+  position: fixed;
+  background-color: white;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 h3 {
   text-align: center;
@@ -103,22 +128,28 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  width: 200px;
+  height: 200px;
 }
 main {
   padding: 50px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: center;
 }
 .second {
   color: red;
   font-size: 80px;
   text-decoration: underline;
-  width: 200px;
-  height: 200px;
+  border: 2px solid transparent;
+  width: 196.5px;
+}
+.flex1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.flex2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 a {
   color: black;
@@ -128,10 +159,12 @@ a {
 a:link {
   color: black;
 }
-a:visited {
+a:hover {
   color: red;
+  padding-top: 40px;
+  border-top: solid 2px red;
 }
-.total:hover {
+.first:hover {
   background-color: #1dc091;
 }
 .xihuan {
@@ -158,8 +191,10 @@ p {
   display: flex;
   justify-content: center;
   position: relative;
+  margin-bottom: 100px;
+  z-index: 1;
 }
-.ul1 li:hover {
+ul:hover {
   color: red;
 }
 body {
@@ -191,12 +226,17 @@ nav {
   display: flex;
   justify-content: center;
 }
+.yu {
+  margin: 0;
+  padding: 0;
+}
 .red::before {
   content: url(miao.jpg);
   opacity: 0;
   position: absolute;
   top: 0px;
   transition: all 0.5s linear;
+  z-index: -1;
 }
 .red:hover::before {
   position: absolute;
@@ -206,4 +246,72 @@ nav {
 }
 .red:hover {
   background-color: rgb(130, 50, 50);
+}
+.jia {
+  margin-bottom: 60px;
+}
+.hui {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+  background-color: #333333;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+.hao {
+  display: flex;
+  justify-content: center;
+}
+body {
+  margin: 0;
+  background-color: lightgray;
+  padding: 0;
+}
+.muxi {
+  color: lightgrey;
+  display: inline-block;
+}
+.haohao {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.hao1 {
+  margin-right: 10px;
+}
+.hao2 {
+  margin-left: 10px;
+}
+.net {
+  margin-top: -2px;
+}
+#button1 {
+  background-color: red;
+  border: 0;
+  height: 60px;
+}
+.wu {
+  width: 0;
+  height: 8px;
+  border: 2px solid red;
+  border-radius: 20%;
+  margin: 5px 0;
+}
+.y1 {
+  border-right: 1px solid lightgray;
+  padding-right: 68px;
+}
+.y2 {
+  margin-left: -79px;
+  border-right: 1px solid lightgray;
+  padding-right: 80px;
+}
+.y3 {
+  margin-left: -73px;
+  border-right: 1px solid lightgray;
+  padding-right: 60px;
+}
+.y4 {
+  margin-left: -83px;
 }
